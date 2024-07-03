@@ -2,7 +2,7 @@
 In self-service restaurants, the order numbers are entered manually and with this application shows them on the screen as prepared.</br>
 
 Note: Your computer must have node and npm packages.
-## Fisrtly open a terminal in project file and run this command
+## Firstly open a terminal in project file and run this command
 -npm start</br>
 
 Note: package.json file must be include this part</br>
