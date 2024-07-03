@@ -5,7 +5,7 @@ Note: Your computer must have node and npm packages.
 ## Fisrtly open a terminal in project file and run this command
 -npm start</br>
 
-Note: package.json file must be include this part
+Note: package.json file must be include this part</br>
 "scripts": {
     "start": "electron .",
     "package-win": "electron-packager . siparis-uygulamasi --platform=win32 --arch=x64 --out=dist --overwrite"
