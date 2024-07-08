@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+}
+
+.input-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 5px;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+
+.input-container div {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+
+}
+
+.column {
+  width: 45%;
+  text-align: center;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+li {
+  padding: 5px 10px;
+  margin: 5px auto;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  color: white;
+}
+
+button {
+  padding: 3px 5px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  border-style: solid;
+  border-color: white;
+}
+
+#reset-button {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #bad5fc;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+*{
+background-color: black;
+  font-size: 35px;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.order-number {
+  font-weight: bold;
+}
+
+input{
+  color: white;
+  width: 200px;
+}
+
+span{
+  color: white;
+  padding: 5px 10px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 5px;
+  background-color: white;
+  transform: translateX(-50%);
+  height: 600px;
+}
+
+.logo-container1 {
+  position: absolute;
+  top: -20px;
+  left: 5%;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+.logo-container2 {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
+.logo {
+  margin-top: 35px;
+  width: 100px; /* Logo boyutu */
+  height: auto;
+}
