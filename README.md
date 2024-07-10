@@ -1,8 +1,8 @@
 # siparis_uygulamasi
 In self-service restaurants, the order numbers are entered manually and with this application shows them on the screen as prepared.</br>
 
-Note: Your computer must have node and npm packages.</br>
-## Firstly open a terminal in project file and run this command
+Note: Your system must have node and npm packages.</br>
+## Firstly open a terminal in project file and run this commands
 -npm init -y</br>
 -npx electron-packager . myapp --platform=win32 --arch=x64 --out=dist</br>
 -npm install electron-packager --save-dev</br>
@@ -15,7 +15,7 @@ Note: package.json file must be include this part</br>
     "package-win": "electron-packager . siparis-uygulamasi --platform=win32 --arch=x64 --out=dist --overwrite"</br>
 }</br>
 
-## After that run this commands
+## After that run this command
 
 -npm start</br>
 
