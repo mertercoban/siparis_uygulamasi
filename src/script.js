@@ -84,7 +84,7 @@ function moveOrderToPrepared(li) {
 
 function manageListSize(listId) {
   const list = document.getElementById(listId);
-  while (list.children.length > 8) {
+  while (list.children.length > 20) {
     list.removeChild(list.lastChild);
   }
 }

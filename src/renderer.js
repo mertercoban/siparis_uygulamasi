@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
     loadOrders();
+
+    document.getElementById('preparing-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            addOrder('preparing');
+        }
+    });
+
+    document.getElementById('prepared-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            addOrder('prepared');
+        }
+    });
 });
 
 function loadOrders() {
@@ -84,7 +96,7 @@ function moveOrderToPrepared(li) {
 
 function manageListSize(listId) {
     const list = document.getElementById(listId);
-    while (list.children.length > 8) {
+    while (list.children.length > 20) {
         list.removeChild(list.lastChild);
     }
 }
