@@ -17,11 +17,6 @@ Note: Your system must have node and npm packages.</br>
 -npx electron-packager . myapp --platform=win32 --arch=x64 --out=dist</br>
 -npm install electron-packager --save-dev</br>
 -npm run package-win</br>
-
-
-
-## After that run this command
-
 -npm start</br>
 
 In project files these command create a dist file and include exe file. </br>
