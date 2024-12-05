@@ -5,8 +5,8 @@ body {
   align-items: center;
   width: 90%;
   padding: 20px;
-  background-color: black; /* Arka plan siyah */
-  color: white; /* Varsayılan yazı rengi beyaz */
+  background-color: black;
+  color: white;
 }
 
 .input-container {
@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 5px;
-  background-color: black; /* Kutular siyah */
+  background-color: black;
   position: fixed;
   bottom: 0;
   z-index: 1000;
@@ -31,9 +31,9 @@ input[type="text"] {
   font-size: 14px;
   margin-right: 10px;
   width: 150px;
-  background-color: black; /* Arka plan siyah */
-  color: white; /* Yazılar beyaz */
-  border: 1px solid white; /* Beyaz kenarlık */
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }
 
 .container {
@@ -63,14 +63,14 @@ ul {
 li {
   padding: 0 10px;
   margin: 5px auto;
-  border: 1px solid white; /* Beyaz kenarlık */
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 275px;
   height: auto;
-  background-color: black; /* Kutular siyah */
-  color: white; /* Yazılar beyaz */
+  background-color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -79,9 +79,9 @@ button {
   font-size: 12px;
   cursor: pointer;
   border-radius: 4px;
-  background-color: black; /* Buton arka planı siyah */
-  color: white; /* Yazılar beyaz */
-  border: 1px solid white; /* Beyaz kenarlık */
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }
 
 #reset-button {
@@ -89,9 +89,9 @@ button {
   bottom: 6px;
   right: 20px;
   padding: 10px 20px;
-  background-color: black; /* Buton arka planı siyah */
-  color: white; /* Yazılar beyaz */
-  border: 1px solid white; /* Beyaz kenarlık */
+  background-color: black;
+  color: white;
+  border: 1px solid white;
   border-radius: 5px;
   cursor: pointer;
   z-index: 2000;
@@ -102,7 +102,7 @@ button {
 }
 
 h2 {
-  color: white; /* Başlık yazıları beyaz */
+  color: white;
   text-align: center;
   font-size: 48px;
   padding: 0;
@@ -115,7 +115,7 @@ h2 {
 }
 
 span {
-  color: white; /* Span yazıları beyaz */
+  color: white;
 }
 
 .container::before {
@@ -125,7 +125,7 @@ span {
   bottom: 0;
   left: 50%;
   width: 5px;
-  background-color: white; /* Çizgi beyaz */
+  background-color: white;
   transform: translateX(-50%);
   height: 1200px;
 }
@@ -149,4 +149,38 @@ span {
 .logo {
   width: 85px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    width: 130px;
+    margin: 0 5px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  li {
+    width: 90%;
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+  #reset-button{
+  margin-bottom: 10%;
+  }
 }
