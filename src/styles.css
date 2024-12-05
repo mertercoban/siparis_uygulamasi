@@ -5,6 +5,8 @@ body {
   align-items: center;
   width: 90%;
   padding: 20px;
+  background-color: black; /* Arka plan siyah */
+  color: white; /* Varsayılan yazı rengi beyaz */
 }
 
 .input-container {
@@ -12,13 +14,12 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 5px;
-  background-color: white;
+  background-color: black; /* Kutular siyah */
   position: fixed;
   bottom: 0;
   z-index: 1000;
   border-radius: 4px;
 }
-
 
 .input-container div {
   display: flex;
@@ -30,6 +31,9 @@ input[type="text"] {
   font-size: 14px;
   margin-right: 10px;
   width: 150px;
+  background-color: black; /* Arka plan siyah */
+  color: white; /* Yazılar beyaz */
+  border: 1px solid white; /* Beyaz kenarlık */
 }
 
 .container {
@@ -37,7 +41,6 @@ input[type="text"] {
   justify-content: space-between;
   position: relative;
   width: 100%;
-
 }
 
 .column {
@@ -60,13 +63,14 @@ ul {
 li {
   padding: 0 10px;
   margin: 5px auto;
-  border: 1px solid black;
+  border: 1px solid white; /* Beyaz kenarlık */
   display: flex;
   justify-content: center;
   align-items: center;
   width: 275px;
   height: auto;
-  color: black;
+  background-color: black; /* Kutular siyah */
+  color: white; /* Yazılar beyaz */
   font-weight: bold;
 }
 
@@ -75,7 +79,9 @@ button {
   font-size: 12px;
   cursor: pointer;
   border-radius: 4px;
-  color: black;
+  background-color: black; /* Buton arka planı siyah */
+  color: white; /* Yazılar beyaz */
+  border: 1px solid white; /* Beyaz kenarlık */
 }
 
 #reset-button {
@@ -83,40 +89,33 @@ button {
   bottom: 6px;
   right: 20px;
   padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border: solid 1px;
+  background-color: black; /* Buton arka planı siyah */
+  color: white; /* Yazılar beyaz */
+  border: 1px solid white; /* Beyaz kenarlık */
   border-radius: 5px;
   cursor: pointer;
   z-index: 2000;
 }
 
-*{
-  background-color: white;
+* {
   font-size: 80px;
 }
 
-h2{
-  color: black;
+h2 {
+  color: white; /* Başlık yazıları beyaz */
   text-align: center;
-  font-size: 96px;
+  font-size: 48px;
   padding: 0;
   margin: 22px 0 0;
 }
-
 
 .order-number {
   font-weight: bold;
   padding-right: 10px;
 }
 
-input{
-  color: black;
-  width: 200px;
-}
-
-span{
-  color: black;
+span {
+  color: white; /* Span yazıları beyaz */
 }
 
 .container::before {
@@ -126,7 +125,7 @@ span{
   bottom: 0;
   left: 50%;
   width: 5px;
-  background-color: black;
+  background-color: white; /* Çizgi beyaz */
   transform: translateX(-50%);
   height: 1200px;
 }
