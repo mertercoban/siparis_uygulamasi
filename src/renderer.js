@@ -84,6 +84,10 @@ function moveOrderToPrepared(li) {
     const preparingList = document.getElementById('preparing-list');
     const preparedList = document.getElementById('prepared-list');
 
+    
+    const audio = new Audio('bell.mp3'); 
+    audio.play(); 
+
     preparingList.removeChild(li);
 
     const newLi = document.createElement('li');
@@ -93,6 +97,7 @@ function moveOrderToPrepared(li) {
     manageListSize('prepared-list');
     saveOrders();
 }
+
 
 function manageListSize(listId) {
     const list = document.getElementById(listId);
